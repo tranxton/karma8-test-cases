@@ -92,6 +92,6 @@ final readonly class SubscriptionCoordinator
             ->whereBetween('subscription_active_until', [$activeTo, $activeFrom])
             ->whereNotNull('email_confirmed_at')
             ->whereIn('email', $usersWithNonValidEmails)
-            ->update(['email_validated_at' => Carbon::now()]);
+            ->update(['email_validated_at' => null]);
     }
 }
