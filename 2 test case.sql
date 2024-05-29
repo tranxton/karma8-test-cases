@@ -12,6 +12,6 @@ WITH suitable_order_ids AS (SELECT DISTINCT order_id
 
 SELECT users.*
 FROM orders
-         LEFT JOIN users ON users.id ON orders.user_id
+         RIGHT JOIN users ON users.id ON orders.user_id
 WHERE orders.order_id IN (SELECT order_id FROM suitable_order_ids)
 HAVING COUNT (orders.payed = 1 OR NULL) / COUNT (*) > 0.5
