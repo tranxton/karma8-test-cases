@@ -10,7 +10,7 @@
  * Available flags:
  *
  * -s email sender
- * -t email test
+ * -t email text
  * -e subscription expires in
  * -l start from users.id (not including)
  * -s batch size
