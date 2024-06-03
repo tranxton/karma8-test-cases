@@ -11,7 +11,7 @@
  *
  * -s email sender
  * -t email text
- * -e subscription expires in
+ * -e subscription expires in (days)
  * -l start from users.id (not including)
  * -s batch size
  *
