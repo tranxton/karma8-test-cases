@@ -46,7 +46,7 @@ function main(): int
 
         $user_email = $user['email'];
 
-        if (!has_validated_email($user) && !check_email($user_email)) {
+        if (!has_validated_email($user) || !check_email($user_email)) {
             $users_with_non_valid_emails [] = $user_email;
 
             continue;
